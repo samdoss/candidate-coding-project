@@ -4,6 +4,7 @@ var product = require('../functions/product.js');
 
 // returns route definition array
 module.exports.getRoutes =  function(){
+
     return [
 
         { method: 'GET', path: '/', config: { handler: index.check } },
@@ -36,6 +37,9 @@ module.exports.getRoutes =  function(){
         // get order with given id
         { method: 'GET',    path: '/orders/{id}', config: { handler: order.get } },
 
+        // get products of the order with given id
+        { method: 'GET',    path: '/orders/{id}/products', config: { handler: order.getProducts } },
+
         // create order
         { method: 'PUT',    path: '/orders', config: { handler: order.create } },
 
@@ -43,7 +47,7 @@ module.exports.getRoutes =  function(){
         { method: 'POST',   path: '/orders/{id}', config: { handler: order.update } },
 
         // delete order
-        { method: 'DELETE', path: '/orders/{id}', config: { handler: order.delete } },
+        { method: 'DELETE', path: '/orders/{id}', config: { handler: order.delete } }
 
     ];
 }

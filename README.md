@@ -6,7 +6,8 @@ RESTful API exercise.
 ## Technologies
 **NodeJS:** "It is a platform built on Chrome's JavaScript runtime for easily building fast, scalable network applications. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices." ([link](http://nodejs.org/))
 
-**Database:** To keep the project simple, no database is used. Data is coming from the files under ```/dummy-data``` folder. 
+**Database:** To keep the project simple, no database is used.
+Data is coming from the files under ```/dummy-data``` folder.
 
 ## Libraries, Frameworks
 **ExpressJS:** "Fast, unopinionated, minimalist web framework for node." ([link](http://expressjs.com))
@@ -55,4 +56,3 @@ DELETE  /orders/{id}            -- delete order with given ID
  - This will start the Node.js server on your local machine.
 - Go to: ```http://localhost:8000/```
  - You should be able to see the status message: ```status: true;```
-

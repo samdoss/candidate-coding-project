@@ -11,18 +11,18 @@ var Product = function _PRODUCT(){
 
         var params = arguments[0];
 
-        this.name = params[0];
-        this.description = params[1];
-        this.width = params[2];
-        this.length = params[3];
-        this.height = params[4];
-        this.weight = params[5];
-        this.value = params[6];
+        this.name = params[0] || '';
+        this.description = params[1] || '';
+        this.width = params[2] || 0;
+        this.length = params[3] || 0;
+        this.height = params[4] || 0;
+        this.weight = params[5] || 0;
+        this.value = params[6] || 0;
 
     }
 
     else {
-        console.log('Please create an instance of Product with arguments.')
+        console.log('Please create an instance of Product with all required arguments.')
     }
 
 }
@@ -56,9 +56,6 @@ Product.prototype = {
 //============================================================
 // Example Usages
 //------------------------------------------------------------
-// var o1 = new NS.Order();
-// var o2 = new NS.Order(contact, products, quantities);
+// var o1 = new Product(['KARLSTAD', 'Loveseat and chaise lounge, Grann dark brown', 40, 30, 20, 20, 179]);
 
-var o2 = new Product();
-console.log(o2);
 module.exports.Product = Product;

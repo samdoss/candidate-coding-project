@@ -2,37 +2,28 @@
 
 //============================================================
 // Constructor - MUST BE AT TOP OF FILE
-// Overloading params: (contact, products, productQuantity)
 //------------------------------------------------------------
 var Order = function _ORDER(){
 
-    this.contact = {
-        recipientName: '',
-        streetAddress: '',
-        city: '',
-        State: '',
-        zipCode: '',
-        phoneNumber: ''
-    };
-
-    this.products = [];
-
-    this.productQuantity = [];
-
     // IF THERE IS ANY GIVEN ARGUMENTS (WHILE CREATING THE INSTANCE)
     // first optional argument - contact details
-    if (arguments[0]){
-        this.contact = arguments[0];
+    if (arguments[0] && arguments[0].length == 8){
 
-        // second optional argument - products array
-        if (arguments[1]){
-            this.products = arguments[1];
+        var params = arguments[0];
+        this.contact = {};
+        this.contact.recipientName = params[0];
+        this.contact.streetAddress = params[1];
+        this.contact.city = params[2];
+        this.contact.State = params[3];
+        this.contact.zipCode = params[4];
+        this.contact.phoneNumber = params[5];
+        this.products = params[6];
+        this.productQuantity = params[6];
 
-            // third optional argument - product quantities
-            if (arguments[2]){
-                this.productQuantity = arguments[2];
-            }
-        }
+    }
+
+    else {
+        console.log('Please create an instance of Order with all required arguments.')
     }
 
 }
@@ -62,7 +53,6 @@ Order.prototype = {
 //============================================================
 // Example Usages
 //------------------------------------------------------------
-// var o1 = new NS.Order();
-// var o2 = new NS.Order(contact, products, quantities);
+// var o2 = new Order('Christ Health Center', '5720 1st Avenue South', 'Birmingham', AL', '35212', '(205) 380-9455', [1], [3]]);
 
 module.exports.Order = Order;

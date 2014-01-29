@@ -23,23 +23,23 @@ RESTful API exercise.
 ////////////////////////////////////////////////////////////
 // PRODUCTS
 ////////////////////////////////////////////////////////////
-GET     /products           -- get all products
-GET     /products/{id}      -- get product with given ID
-PUT     /products           -- create new product
-POST    /products/{id}      -- update existing product
-DELETE  /products/{id}      -- delete product with given ID
+GET     /products           -- get all the products
+GET     /products/{id}      -- get the product with given ID
+PUT     /products           -- create a new product
+POST    /products/{id}      -- update the existing product
+DELETE  /products/{id}      -- delete the product with given ID
 ////////////////////////////////////////////////////////////
 
 
 ////////////////////////////////////////////////////////////
 // ORDERS
 ////////////////////////////////////////////////////////////
-GET     /orders                 -- get all orders
-GET     /orders/{id}            -- get order with given ID
-GET     /orders/{id}/products   -- get products of the order with given ID
-PUT     /orders                 -- create new order
-POST    /orders/{id}            -- update existing order
-DELETE  /orders/{id}            -- delete order with given ID
+GET     /orders                 -- get all the orders
+GET     /orders/{id}            -- get the order with given ID
+GET     /orders/{id}/products   -- get the products of the order with given ID
+PUT     /orders                 -- create a new order
+POST    /orders/{id}            -- update the existing order
+DELETE  /orders/{id}            -- delete the order with given ID
 ////////////////////////////////////////////////////////////
 ```
 

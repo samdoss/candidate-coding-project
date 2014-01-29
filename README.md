@@ -47,10 +47,10 @@ DELETE  /orders/{id}            -- delete the order with given ID
 - Install Node.js ([download](http://nodejs.org/))
 - Download 'candidate-coding-project' files.
 - Open Node.js console, cd to project main folder.
-- Execute following command:
+- Execute the following command:
  - ```npm install``` 
- - This will install project dependencies (such as JSPath)
-- Then execute following command:
+ - This will install the project dependencies (such as JSPath)
+- Then execute the following command:
  - ```node app```
  - This will start the Node.js server on your local machine.
 - Go to: ```http://localhost:8000/```

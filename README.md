@@ -10,7 +10,6 @@ RESTful API exercise.
 Data is coming from the files under ```/dummy-data``` folder.
 
 ## Libraries, Frameworks
-**ExpressJS:** "Fast, unopinionated, minimalist web framework for node." ([link](http://expressjs.com))
 **HapiJS:** "Server Framework for Node.js." ([link](http://www.hapijs.com))
 **JSPath:** "It is a domain-specific language (DSL) that enables you to navigate and find data within your JSON documents. Using JSPath, you can select items of JSON in order to retrieve the data they contain." ([link](https://github.com/dfilatov/jspath))
 
@@ -18,7 +17,7 @@ Data is coming from the files under ```/dummy-data``` folder.
 **Appfog** - PaaS Provider, created Node.js 0.10.22 instance. ([link](https://docs.appfog.com/languages/node))
 
 ## Endpoints
-API Url: 
+**API Url:** http://candidate-coding-project.aws.af.cm
 
 ```
 ////////////////////////////////////////////////////////////

@@ -2,7 +2,7 @@ var index = require('../functions/index.js');
 var order = require('../functions/order.js');
 var product = require('../functions/product.js');
 
-// returns route definition array
+// Returns array - contains Hapi route definition objects
 module.exports.getRoutes =  function(){
 
     return [
@@ -12,41 +12,41 @@ module.exports.getRoutes =  function(){
         ///////////////////////////////////////////////////////////////////
         // PRODUCTS
 
-        // get all products
+        // Get all the products
         { method: 'GET',    path: '/products', config: { handler: product.getAll } },
 
-        // get product with given id
+        // Get the product with given id
         { method: 'GET',    path: '/products/{id}', config: { handler: product.get } },
 
-        // create product
+        // Create a product
         { method: 'PUT',    path: '/products', config: { handler: product.create } },
 
-        // update product
+        // Update the product
         { method: 'POST',   path: '/products/{id}', config: { handler: product.update } },
 
-        // delete product
+        // Delete the product
         { method: 'DELETE', path: '/products/{id}', config: { handler: product.delete } },
 
 
         ///////////////////////////////////////////////////////////////////
         // ORDERS
 
-        // get all orders
+        // Get all the orders
         { method: 'GET',    path: '/orders', config: { handler: order.getAll } },
 
-        // get order with given id
+        // Get the order with given id
         { method: 'GET',    path: '/orders/{id}', config: { handler: order.get } },
 
-        // get products of the order with given id
+        // Get products of the an order
         { method: 'GET',    path: '/orders/{id}/products', config: { handler: order.getProducts } },
 
-        // create order
+        // Create an order
         { method: 'PUT',    path: '/orders', config: { handler: order.create } },
 
-        // update order
+        // Update the order
         { method: 'POST',   path: '/orders/{id}', config: { handler: order.update } },
 
-        // delete order
+        // Delete the order
         { method: 'DELETE', path: '/orders/{id}', config: { handler: order.delete } }
 
     ];

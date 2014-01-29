@@ -1,22 +1,24 @@
-// import Hapi library
+// Importing required libraries and frameworks
 var Hapi = require('hapi');
 var jspath = require('jspath');
 
-// import route definition file
+// Importing route definition file
 var routes = require('./config/routes');
 
-// starts the server
+// Starts the server when called
 var start = function () {
 
+    // Decides which port to use
+    // AppFog port env. variable: process.env.VCAP_APP_PORT
     var port = parseInt(process.env.VCAP_APP_PORT) || 8000;
 
-    // create server
+    // Create server instance
     var server = Hapi.createServer('localhost', port);
 
-    // add the routes
+    // Add the routes
     server.route(routes.getRoutes());
 
-    // start!
+    // All set, start!
     server.start(function () {
         console.log('Server started at: ' + server.info.uri);
     });

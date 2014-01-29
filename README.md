@@ -14,7 +14,7 @@ RESTful API exercise.
 **JSPath:** "It is a domain-specific language (DSL) that enables you to navigate and find data within your JSON documents. Using JSPath, you can select items of JSON in order to retrieve the data they contain." ([link](https://github.com/dfilatov/jspath))
 
 ## Deployment
-- **AppFog** - PaaS Provider, created Node.js 0.10.22 instance. ([link](https://docs.appfog.com/languages/node))
+**AppFog** - PaaS Provider, created Node.js 0.10.22 instance. ([link](https://docs.appfog.com/languages/node))
 
 ## Endpoints
 **API Url:** http://candidate-coding-project.aws.af.cm

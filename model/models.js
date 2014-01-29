@@ -1,11 +1,11 @@
 // export Order model
-var orderModel = require('../model/order.js');
+var orderModel = require('./Order.js');
 module.exports.Order = orderModel.Order;
 
 // export Product model
-var productModel = require('../model/product.js');
+var productModel = require('./Product.js');
 module.exports.Product = productModel.Product;
 
 // export Result model
-var resultModel = require('../model/result.js');
+var resultModel = require('./Result.js');
 module.exports.Result = resultModel.Result;
